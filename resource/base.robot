@@ -25,19 +25,30 @@ Go to base
     Click Element                    id=com.zzkko:id/iv_close  
 
 Buy the first thing
+    Wait Until Element Is Visible        ${first_product}
     Click Element                        ${first_product}
     Wait Until Element Is Visible        id=com.zzkko:id/btn_buy
     Swipe                                555    1970    551    1503
-    Click Element                        xpath=//android.widget.TextView[@content-desc="L(G)unselected option"]
+    Click Element                        accessibility_id=Gunselected option
+
+    Click Element                        id=com.zzkko:id/btn_buy
+    Wait Until Element Is Visible        id=com.zzkko:id/cart_count
+Buy XL
+    Wait Until Element Is Visible        ${first_product}
+    Click Element                        ${first_product}
+    Wait Until Element Is Visible        id=com.zzkko:id/btn_buy
+    Swipe                                555    1970    551    1503
+    Click Element                        accessibility_id=XL(GG)unselected option
 
     Click Element                        id=com.zzkko:id/btn_buy
     Wait Until Element Is Visible        id=com.zzkko:id/cart_count
 
 Buy the second thing
+    Wait Until Element Is Visible        ${second_product}
     Click Element                        ${second_product}
     Wait Until Element Is Visible        id=com.zzkko:id/btn_buy
     Swipe                                555    1970    551    1503
-    Click Element                        xpath=//android.widget.TextView[@content-desc="L(G)unselected option"]
+    Click Element                        accessibility_id=Gunselected option
 
     Click Element                        id=com.zzkko:id/btn_buy
     Wait Until Element Is Visible        id=com.zzkko:id/cart_count

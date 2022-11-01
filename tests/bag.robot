@@ -21,18 +21,15 @@ Sacola (1 Product)
     Click Element                        ${search_bar_principal}  
 
     Wait Until Element Is Visible        ${search_bar_tv}
-    Input Text                           ${search_bar_tv}            Camisa
+    Input Text                           ${search_bar_tv}            2736257
     Click Element                        ${search_button}
  
-    
-    Buy the first thing
+    Buy XL
 
     Click Element                        accessibility_id=Shopping Bag
 
     Wait Until Page Contains             Shopping Bag
     Wait Until Page Contains             SIGN IN
-
-    
 
 Sacola (2 Product)
     Go to base
